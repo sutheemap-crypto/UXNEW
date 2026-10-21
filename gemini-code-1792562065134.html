@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คลังสรุปเนื้อหาและ Mock Test เตรียมสอบ Final - HCI & UX/UI Design</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Sarabun -->
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Sarabun', sans-serif; 
+            background-color: #f8f6f0;
+            color: #2d3748;
+        }
+        .slide-card {
+            background-color: #ffffff;
+            border: 1px solid #e2ddd5;
+            box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+        }
+        .tab-btn-active {
+            background-color: #2b4c7e !important;
+            color: #ffffff !important;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="min-h-screen pb-16 antialiased">
+
+    <!-- Top Navigation Banner Header -->
+    <header class="bg-[#2b4c7e] text-white shadow-md border-b border-[#1f3a63] sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 sm:px-6">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
+                <div>
+                    <div class="flex items-center gap-2">
+                        <span class="bg-amber-400 text-[#1f3a63] font-bold text-xs px-2.5 py-0.5 rounded-full uppercase tracking-wide">Final Study Portal</span>
+                        <span class="text-blue-200 text-xs">วิชา HCI & UX/UI Design</span>
+                    </div>
+                    <h1 class="text-xl sm:text-2xl font-bold mt-1 text-white">คลังสรุปเนื้อหาและ Mock Test เตรียมสอบ Final</h1>
+                </div>
+                <div class="text-xs bg-white/10 px-3.5 py-2 rounded-lg border border-white/15 text-blue-100 flex items-center gap-2">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>เนื้อหาฉบับละเอียดครอบคลุม 6 หัวข้อสอบ</span>
+                </div>
+            </div>
+
+            <!-- Slide Navigation Tabs -->
+            <nav class="flex overflow-x-auto gap-2 mt-4 pt-2 border-t border-white/15 text-sm no-scrollbar">
+                <button onclick="switchSlide('q1_3')" id="tab-q1_3" class="tab-btn px-4 py-1.5 rounded-md text-blue-100 hover:bg-white/10 transition whitespace-nowrap">Slide 1: 8 Golden Rules</button>
+                <button onclick="switchSlide('q2')" id="tab-q2" class="tab-btn px-4 py-1.5 rounded-md text-blue-100 hover:bg-white/10 transition whitespace-nowrap">Slide 2: Information Architecture</button>
+                <button onclick="switchSlide('q4')" id="tab-q4" class="tab-btn px-4 py-1.5 rounded-md text-blue-100 hover:bg-white/10 transition whitespace-nowrap">Slide 3: 10 Usability Heuristics</button>
+                <button onclick="switchSlide('q5')" id="tab-q5" class="tab-btn px-4 py-1.5 rounded-md text-blue-100 hover:bg-white/10 transition whitespace-nowrap">Slide 4: A/B Testing</button>
+                <button onclick="switchSlide('q6')" id="tab-q6" class="tab-btn px-4 py-1.5 rounded-md text-blue-100 hover:bg-white/10 transition whitespace-nowrap">Slide 5: Universal Design</button>
+                <button onclick="switchSlide('mocktest')" id="tab-mocktest" class="tab-btn px-4 py-1.5 rounded-md text-amber-300 hover:bg-white/10 transition whitespace-nowrap font-semibold"><i class="fa-solid fa-pen-to-square mr-1"></i>Mock Test (แนวข้อสอบ 6 ข้อ)</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 mt-8">
+
+        <!-- SLIDE 1: SHNEIDERMAN'S 8 GOLDEN RULES -->
+        <section id="slide-q1_3" class="slide-content block">
+            <div class="slide-card rounded-2xl p-6 sm:p-8">
+                <!-- Slide Header -->
+                <div class="border-b border-stone-200 pb-4 mb-6 flex justify-between items-start">
+                    <div>
+                        <span class="text-xs font-bold text-[#2b4c7e] uppercase tracking-wider">Slide 01 / 05 • หัวข้อสอบข้อ 1 และ ข้อ 3</span>
+                        <h2 class="text-2xl font-bold text-slate-900 mt-1">Shneiderman’s Eight Golden Rules (กฎทอง 8 ประการ)</h2>
+                    </div>
+                    <span class="bg-[#f0ece1] text-[#2b4c7e] text-xs font-bold px-3 py-1 rounded-full">HCI Core Principles</span>
+                </div>
+
+                <p class="text-base text-slate-700 mb-6 leading-relaxed">
+                    กฎทองคำ 8 ประการคิดค้นโดยศาสตราจารย์ Ben Shneiderman (1986) เพื่อใช้เป็นกรอบวินิจฉัยและวางรากฐานการออกแบบ User Interface ในงาน HCI (Human-Computer Interaction)[cite: 62, 63] ช่วยเชื่อมโยงคลื่นสมองมนุษย์ (Brainwaves) เข้ากับตรรกะของเครื่อง (Machine Logic) อย่างมีประสิทธิภาพ[cite: 62]
+                </p>
+
+                <!-- Detailed Rules -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div class="p-5 bg-[#fcfbf9] rounded-xl border border-stone-200">
+                        <div class="font-bold text-slate-900 text-base mb-1 text-[#2b4c7e]">1. Strive for Consistency (สร้างความสม่ำเสมอในการออกแบบ)</div>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            ต้องรักษามาตรฐาน Visual, Terminology และ Action ลำดับการทำงานให้เหมือนกันทั้งระบบเพื่อลดระยะเวลาการเรียนรู้ (Learning Curve)[cite: 63, 65] ในเชิงการพัฒนาโปรแกรมควรใช้ Component-Driven Design, Shared Design Tokens (เช่น การกำหนดโทนสีและขนาดปุ่ม) และ Naming Conventions เพื่อให้ UI มีความสม่ำเสมอ[cite: 65]
+                        </p>
+                    </div>
+
+                    <div class="p-5 bg-[#fcfbf9] rounded-xl border border-stone-200">
+                        <div class="font-bold text-slate-900 text-base mb-1 text-[#2b4c7e]">2. Seek Universal Usability / Enable Shortcuts (รองรับผู้ใช้ทุกระดับ)</div>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            ระบบที่ดีต้องยืดหยุ่น สำหรับผู้ใช้มือใหม่ (Novice Users) ต้องการ Tooltips, GUI ชัดเจน และคำแนะนำแบบ Step-by-step[cite: 66] ขณะที่ผู้ใช้ระดับสูง (Expert/Power Users) ต้องการ Shortcuts (เช่น Ctrl+C, Cmd+V), Command-Line หรือ Macros เพื่อข้ามขั้นตอน[cite: 66] นอกจากนี้ต้องคำนึงถึง Accessibility รองรับผู้พิการ เช่น Screen Reader / VoiceOver[cite: 66]
+                        </p>
+                    </div>
+
+                    <div class="p-5 bg-[#fcfbf9] rounded-xl border border-stone-200">
+                        <div class="font-bold text-slate-900 text-base mb-1 text-[#2b4c7e]">3. Offer Informative Feedback (มีการตอบสนองที่ให้ข้อมูลเสมอ)</div>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            ทุกๆ การกระทำของผู้ใช้ (Input) ระบบต้องตอบสนอง Output ทันทีเพื่อให้ทราบ State ของระบบ[cite: 67] สำหรับงานขนาดเล็ก (Micro-actions) เช่น การคลิกปุ่มหรือลากไฟล์ ให้เปลี่ยนสีไอคอนหรือสร้างไฮไลต์[cite: 67] ส่วนงานที่ใช้เวลานาน (Long processes) ต้องมี Progress Bar หรือเปอร์เซ็นต์บอกความคืบหน้า เพื่อไม่ให้ผู้ใช้คิดว่าระบบค้าง[cite: 67]
+                        </p>
+                    </div>
+
+                    <div class="p-5 bg-[#fcfbf9] rounded-xl border border-stone-200">
+                        <div class="font-bold text-slate-900 text-base mb-1 text-[#2b4c7e]">4. Design Dialog to Yield Closure (ออกแบบบทสนทนาให้มีจุดจบชัดเจน)</div>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            ลำดับขั้นตอนการทำงานต้องแบ่งเป็น จุดเริ่มต้น (Init), จุดดำเนินการ (Active State) และจุดจบสมบูรณ์ (Closure)[cite: 68] การแสดงข้อความตอบรับ เช่น "Installation Complete", "Payment Successful" หรือ "Thank You" ช่วยปลดล็อกความกังวลใจ (Relieves Anxiety) ของผู้ใช้[cite: 68]
+                        </p>
+                    </div>
+
+                    <div class="p-5 bg-[#fcfbf9] rounded-xl border border-stone-200">
+                        <div class="font-bold text-slate-900 text-base mb-1 text-[#2b4c7e]">5. Offer Simple Error Handling (ป้องกันและจัดการข้อผิดพลาดอย่างชาญฉลาด)</div>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            ออกแบบระบบไม่ให้เกิด Error ตั้งแต่แรก แต่หากเกิดขึ้น ห้ามลงโทษผู้ใช้ด้วยรหัส Error ทางเทคนิคที่น่าตกใจ (System-Centric เช่น Fatal Exception 0x80004005)[cite: 69, 70] แต่ต้องแจ้งเตือนแบบ Real-time ด้วยภาษาคน (User-Centric) พร้อมระบุวิธีแก้ไขที่ทำตามได้ทันที[cite: 69, 70]
+                        </p>
+                    </div>
+
+                    <div class="p-5 bg-[#fcfbf9] rounded-xl border border-stone-200">
+                        <div class="font-bold text-slate-900 text-base mb-1 text-[#2b4c7e]">6. Permit Easy Reversal of Actions (อนุญาตให้ย้อนกลับการกระทำได้เสมอ)</div>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            ระบบต้องมีตาข่ายรองรับความปลอดภัย (Safety Net) เช่น ปุ่ม Undo / Redo, Cancel หรือ Back ในกระบวนการหลายขั้นตอน[cite: 70] การมีปุ่มย้อนกลับจะช่วยลดความกังวล ทำให้ผู้ใช้กล้าสำรวจและทดลองใช้งานระบบมากขึ้นโดยไม่ต้องกลัวทำระบบพัง[cite: 70]
+                        </p>
+                    </div>
+
+                    <div class="p-5 bg-[#fcfbf9] rounded-xl border border-stone-200">
+                        <div class="font-bold text-slate-900 text-base mb-1 text-[#2b4c7e]">7. Support Internal Locus of Control (ผู้ใช้เป็นผู้กุมบังเหียนควบคุมระบบ)</div>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            ผู้ใช้ต้องรู้สึกว่าตนเองเป็นผู้ริเริ่มกระบวนการ (User-Initiated) ไม่ใช่ถูกระบบสั่งการหรือบังคับ[cite: 71] ระบบต้องมีทางออกฉุกเฉิน (Emergency Exits / Force Quit) ให้ยกเลิกได้ตลอดเวลา[cite: 71] รวมถึงอนุญาตให้ปรับแต่ง Dashboard หรือเลือกโหมดการแสดงผล (Dark/Light mode) เพื่อเพิ่มความรู้สึกเป็นเจ้าของ[cite: 71]
+                        </p>
+                    </div>
+
+                    <div class="p-5 bg-[#fcfbf9] rounded-xl border border-stone-200">
+                        <div class="font-bold text-slate-900 text-base mb-1 text-[#2b4c7e]">8. Reduce Short-Term Memory Load (ลดภาระหน่วยความจำระยะสั้น)</div>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            สมองมนุษย์จำความจำระยะสั้นได้จำกัดเพียง $5 \pm 2$ รายการ[cite: 72] ระบบที่ดีต้องใช้หลัก **Recognition over Recall** (เลือกจากสิ่งที่เห็น ดีกว่านึกจำเอง)[cite: 72] เช่น การมี Autofill, Dropdown Menus หรือ เมนูลัด 4 ไอคอนหลักเหมือนใน iOS เพื่อป้องกัน Cognitive Overload[cite: 72]
+                        </p>
+                    </div>
+                </div>
+
+                <!-- AI Highlight Box -->
+                <div class="mt-6 p-5 bg-[#edf2f7] border border-slate-300 rounded-xl">
+                    <h4 class="font-bold text-[#1a365d] text-base mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-robot"></i> การประยุกต์ใช้กฎ 8 ข้อในยุค Generative AI & Chatbot[cite: 64]
+                    </h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-slate-700 leading-relaxed">
+                        <div>• <strong>Rule 3 (Feedback):</strong> แสดงอนิเมชันเคอร์เซอร์กระพริบหรือจุดโหลดขณะ AI ประมวลผล (Streaming response)[cite: 64]</div>
+                        <div>• <strong>Rule 5 (Error):</strong> แจ้งข้อความ "AI ไม่เข้าใจคำสั่ง โปรดระบุบริบทเพิ่มเติม" แทนการขึ้น Network Error[cite: 64]</div>
+                        <div>• <strong>Rule 7 (Control):</strong> มีปุ่ม "Stop Generating" ให้ผู้ใช้สั่งหยุด AI ได้ทันทีเพื่อไม่ให้เสียเวลา/โควต้า[cite: 64]</div>
+                        <div>• <strong>Rule 8 (Memory):</strong> มี 'Suggested Prompts' หรือแนวทางคำสั่งให้เลือก แทนที่จะปล่อยให้ผู้ใช้พิมพ์เองจากศูนย์[cite: 64]</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 2: INFORMATION ARCHITECTURE -->
+        <section id="slide-q2" class="slide-content hidden">
+            <div class="slide-card rounded-2xl p-6 sm:p-8">
+                <div class="border-b border-stone-200 pb-4 mb-6 flex justify-between items-start">
+                    <div>
+                        <span class="text-xs font-bold text-[#2b4c7e] uppercase tracking-wider">Slide 02 / 05 • หัวข้อสอบข้อ 2</span>
+                        <h2 class="text-2xl font-bold text-slate-900 mt-1">Information Architecture (Card Sorting / Sitemap)</h2>
+                    </div>
+                    <span class="bg-[#f0ece1] text-[#2b4c7e] text-xs font-bold px-3 py-1 rounded-full">IA & Navigation</span>
+                </div>
+
+                <!-- Core Pillars -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                    <div class="p-4 bg-[#fcfbf9] rounded-xl border border-stone-200">
+                        <span class="text-[#2b4c7e] font-bold text-base block mb-1"><i class="fa-solid fa-bullseye mr-1"></i> เป้าหมายสูงสุดของ IA</span>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            คือ **Findability (การหาของให้เจอ)** เพื่อแก้ปัญหาข้อมูลล้นทะลัก (Digital Overload) ช่วยให้ผู้ใช้ค้นหาข้อมูลที่ต้องการได้รวดเร็วที่สุดโดยไม่งง[cite: 2, 25]
+                        </p>
+                    </div>
+                    <div class="p-4 bg-[#fcfbf9] rounded-xl border border-stone-200">
+                        <span class="text-[#2b4c7e] font-bold text-base block mb-1"><i class="fa-solid fa-cubes mr-1"></i> IA vs UX</span>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            IA คือ **โครงกระดูก** เน้นที่ Logic, Categorization และ Structure[cite: 4, 27] ส่วน UX คือ **ความรู้สึก** เน้นที่ Emotion, Aesthetics และประสบการณ์รวม[cite: 4, 27]
+                        </p>
+                    </div>
+                    <div class="p-4 bg-[#fcfbf9] rounded-xl border border-stone-200">
+                        <span class="text-[#2b4c7e] font-bold text-base block mb-1"><i class="fa-solid fa-filter mr-1"></i> Choice Overload Effect</span>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            การมีทางเลือกมากเกินไปดึงดูดคนดูได้ดี แต่ทำให้เกิดความลังเลจนไม่ตัดสินใจ[cite: 5, 28] (เช่น แยม 24 รส คนหยุดดู 60% ซื้อ 3% vs แยม 6 รส คนหยุดดู 40% ซื้อถึง 30%)[cite: 5, 28]
+                        </p>
+                    </div>
+                </div>
+
+                <div class="space-y-5">
+                    <!-- Content Principles -->
+                    <div class="p-5 bg-[#fcfbf9] rounded-xl border border-stone-200">
+                        <h3 class="font-bold text-base text-slate-900 mb-2 border-l-4 border-[#2b4c7e] pl-2">ศาสตร์การจัดระเบียบเนื้อหาบนหน้าจอ (Content Principles)[cite: 6, 29]</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-slate-700 leading-relaxed mt-3">
+                            <div class="p-3 bg-white border border-slate-200 rounded-lg">
+                                <strong class="text-[#2b4c7e] block mb-1">1. Object (การจัดกลุ่ม)[cite: 6, 29]</strong>
+                                จัดกลุ่มวัตถุประเภทเดียวกันไว้ด้วยกันเพื่อให้ User ค้นหาข้อมูลได้ง่ายที่สุด[cite: 6, 29]
+                            </div>
+                            <div class="p-3 bg-white border border-slate-200 rounded-lg">
+                                <strong class="text-[#2b4c7e] block mb-1">2. Disclosure (การเปิดเผยข้อมูล)[cite: 6, 29]</strong>
+                                แสดงเฉพาะข้อความที่จำเป็น หากสนใจค่อยกดอ่านเพิ่ม ป้องกันข้อมูลล้นหน้าจอ (Progressive Disclosure)[cite: 6, 29]
+                            </div>
+                            <div class="p-3 bg-white border border-slate-200 rounded-lg">
+                                <strong class="text-[#2b4c7e] block mb-1">3. Example (ตัวอย่าง)[cite: 6, 29]</strong>
+                                สมองมนุษย์แยกแยะข้อมูลได้เร็วขึ้นเมื่อมีภาพประกอบตัวอย่างหรือไอคอนประกอบหมวดหมู่นั้นๆ[cite: 6, 29]
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation & Future Proofing -->
+                    <div class="p-5 bg-[#fcfbf9] rounded-xl border border-stone-200">
+                        <h3 class="font-bold text-base text-slate-900 mb-2 border-l-4 border-[#2b4c7e] pl-2">ระบบนำทาง (Navigation Systems) & Future-Proofing[cite: 7, 8, 30, 31]</h3>
+                        <ul class="text-sm text-slate-700 space-y-2 list-disc list-inside leading-relaxed">
+                            <li><strong>Front Doors (ประตูหน้าบ้าน):</strong> ไม่ว่า User เข้ามาผ่านหน้าไหน ต้องทำให้เห็นภาพทันทีว่าใช้งานอะไรได้บ้าง และไปหน้าถัดไปอย่างไร[cite: 7, 30]</li>
+                            <li><strong>Focused Navigation & Multiple Classification:</strong> แยกประเภทเมนูชัดเจน (เช่น เมนูหลักด้านบน และ Footer ข้อมูลองค์กร) และมีระบบค้นหาทั้งแบบกว้างและแบบแคบ[cite: 7, 30]</li>
+                            <li><strong>Future-Proofing your Product:</strong> สถาปัตยกรรมข้อมูลที่ดีต้องคำนึงถึงอนาคต สามารถสเกลรองรับเนื้อหาหรือฟีเจอร์ใหม่ๆ ที่จะเพิ่มในอีกหลายปีข้างหน้าได้ โดยที่โครงสร้างหลักไม่พังทลาย[cite: 8, 31]</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card Sorting & Sitemap -->
+                    <div class="p-5 bg-[#edf2f7] border border-slate-300 rounded-xl">
+                        <h3 class="font-bold text-base text-[#1a365d] mb-2"><i class="fa-solid fa-layer-group mr-1"></i> Card Sorting และ Sitemap</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-slate-700 leading-relaxed">
+                            <div>
+                                <strong class="text-[#2b4c7e] block mb-1">Card Sorting (เครื่องมือจัดหมวดหมู่):</strong>
+                                <p>• <strong>Open Card Sorting:</strong> ให้ผู้ใช้จัดกลุ่มการ์ดหัวข้อเนื้อหา พร้อมตั้งชื่อหมวดหมู่ด้วยตนเองอย่างอิสระ (เหมาะสำหรับการสร้าง IA ขึ้นมาใหม่จาก Mental Model ของผู้ใช้)</p>
+                                <p class="mt-1">• <strong>Closed Card Sorting:</strong> ให้ผู้ใช้จัดกลุ่มการ์ดลงในหมวดหมู่ที่ทีมออกแบบกำหนดไว้อยู่แล้ว (เหมาะสำหรับการทดสอบโครงสร้าง IA เดิมว่าเข้าใจง่ายหรือไม่)</p>
+                            </div>
+                            <div>
+                                <strong class="text-[#2b4c7e] block mb-1">Sitemap (แผนผังเว็บไซต์):</strong>
+                                <p>เป็นการนำผลลัพธ์ที่ได้จากการทำ Card Sorting มาเขียนเป็นผังลำดับชั้น (Hierarchy) แสดงโครงสร้างการเชื่อมโยงของทุกหน้าในระบบดิจิทัล เพื่อเป็นบลูพริ้นท์ให้ Designer และ Developer ทำงานต่อ[cite: 1, 24]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 3: NIELSEN'S 10 HEURISTICS -->
+        <section id="slide-q4" class="slide-content hidden">
+            <div class="slide-card rounded-2xl p-6 sm:p-8">
+                <div class="border-b border-stone-200 pb-4 mb-6 flex justify-between items-start">
+                    <div>
+                        <span class="text-xs font-bold text-[#2b4c7e] uppercase tracking-wider">Slide 03 / 05 • หัวข้อสอบข้อ 4</span>
+                        <h2 class="text-2xl font-bold text-slate-900 mt-1">Nielsen’s 10 Usability Heuristics Evaluation</h2>
+                    </div>
+                    <span class="bg-[#f0ece1] text-[#2b4c7e] text-xs font-bold px-3 py-1 rounded-full">Usability Inspection</span>
+                </div>
+
+                <p class="text-base text-slate-700 mb-6 leading-relaxed">
+                    Heuristic Evaluation เป็นวิธีการประเมินความสะดวกในการใช้งาน (Usability Inspection Method) ที่ได้รับความนิยมมากที่สุด โดยให้ผู้เชี่ยวชาญตรวจสอบส่วนต่อประสานตามหลักเกณฑ์มาตรฐาน 10 ข้อของ Jakob Nielsen[cite: 38]
+                </p>
+
+                <!-- 10 Heuristics Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm mb-6">
+                    <div class="p-3.5 bg-[#fcfbf9] border border-stone-200 rounded-xl">
+                        <span class="font-bold text-[#2b4c7e]">1. Visibility of System Status (การแสดงสถานะระบบ):</span>
+                        ระบบต้องแจ้งให้ผู้ใช้ทราบเสมอว่าเกิดอะไรขึ้น ผ่าน Feedback ที่เหมาะสมในเวลาอันรวดเร็ว[cite: 39, 41] (เช่น การแสดง Progress indicator ขณะอัปโหลดไฟล์)[cite: 41]
+                    </div>
+
+                    <div class="p-3.5 bg-[#fcfbf9] border border-stone-200 rounded-xl">
+                        <span class="font-bold text-[#2b4c7e]">2. Match between System & Real World (เปรียบเทียบกับโลกจริง):</span>
+                        ระบบต้องใช้ภาษา สัญลักษณ์ และแนวคิดที่ผู้ใช้คุ้นเคยในชีวิตจริง มากกว่าคำศัพท์เฉพาะของระบบ[cite: 39, 43] (เช่น การจัดคลังสื่อแบบ Library ใน iTunes)[cite: 43]
+                    </div>
+
+                    <div class="p-3.5 bg-[#fcfbf9] border border-stone-200 rounded-xl">
+                        <span class="font-bold text-[#2b4c7e]">3. User Control & Freedom (การให้อิสระแก่ผู้ใช้):</span>
+                        มีทางออกฉุกเฉิน (Emergency Exit)[cite: 39, 44] เช่น ปุ่ม Cancel, Undo/Redo[cite: 39] หรือ Breadcrumbs สำหรับย้อนกลับได้ง่ายเมื่อกดผิด[cite: 13, 44]
+                    </div>
+
+                    <div class="p-3.5 bg-[#fcfbf9] border border-stone-200 rounded-xl">
+                        <span class="font-bold text-[#2b4c7e]">4. Consistency & Standards (ความสม่ำเสมอ):</span>
+                        ปฏิบัติตามมาตรฐานเดียวกันทั้งระบบ ไม่ทำให้ผู้ใช้สงสัยว่าปุ่มหรือคำที่ต่างกันมีความหมายเดียวกันหรือไม่[cite: 39, 46] (เช่น แถบเมนู Ribbon ใน MS Office)[cite: 46]
+                    </div>
+
+                    <div class="p-3.5 bg-[#fcfbf9] border border-stone-200 rounded-xl">
+                        <span class="font-bold text-[#2b4c7e]">5. Error Prevention (การป้องกันความผิดพลาด):</span>
+                        ออกแบบเพื่อป้องกันไม่ให้เกิด Error ตั้งแต่แรกดีกว่าการแก้ทีหลัง[cite: 39, 47] (เช่น การ Disable ปุ่มหลังกดส่ง[cite: 47] หรือระบบ Auto Recommendations)[cite: 47]
+                    </div>
+
+                    <div class="p-3.5 bg-[#fcfbf9] border border-stone-200 rounded-xl">
+                        <span class="font-bold text-[#2b4c7e]">6. Recognition rather than Recall (จำได้ดีกว่านึกได้):</span>
+                        ลดภาระความจำโดยทำให้ตัวเลือก/ไอคอนมองเห็นชัดเจน[cite: 40, 48] ให้ผู้ใช้เลือกจากสิ่งที่เห็น ดีกว่าการให้นึกจำ Syntax เอง[cite: 40, 48]
+                    </div>
+
+                    <div class="p-3.5 bg-[#fcfbf9] border border-stone-200 rounded-xl">
+                        <span class="font-bold text-[#2b4c7e]">7. Flexibility & Efficiency of Use (ความยืดหยุ่นและประสิทธิภาพ):</span>
+                        มี Accelerators หรือคีย์ลัดสำหรับผู้ใช้ระดับ Expert เพื่อความรวดเร็ว[cite: 40, 49] ขณะเดียวกันผู้ใช้มือใหม่ก็ยังใช้งานได้ราบรื่น[cite: 40, 49]
+                    </div>
+
+                    <div class="p-3.5 bg-[#fcfbf9] border border-stone-200 rounded-xl">
+                        <span class="font-bold text-[#2b4c7e]">8. Aesthetic & Minimalist Design (ความสวยงามและเรียบง่าย):</span>
+                        แสดงเฉพาะข้อมูลที่จำเป็น ตัดข้อมูลที่ไม่เกี่ยวข้องออก[cite: 40, 50] ใช้ White Space จัด Visual Hierarchy ไม่ให้หน้าจอแออัด[cite: 20, 50]
+                    </div>
+
+                    <div class="p-3.5 bg-[#fcfbf9] border border-stone-200 rounded-xl">
+                        <span class="font-bold text-[#2b4c7e]">9. Help Users Recover from Errors (ช่วยแก้ไขข้อผิดพลาด):</span>
+                        Error Message ต้องเป็นภาษาคนที่เข้าใจง่าย ระบุปัญหาชัดเจน และเสนอวิธีแก้ไขที่เป็นรูปธรรม[cite: 40, 51]
+                    </div>
+
+                    <div class="p-3.5 bg-[#fcfbf9] border border-stone-200 rounded-xl">
+                        <span class="font-bold text-[#2b4c7e]">10. Help & Documentation (ความช่วยเหลือและคู่มือ):</span>
+                        แม้ระบบที่ดีควรรู้ได้ด้วยตนเอง แต่หากจำเป็นต้องมีเอกสาร ต้องค้นหาง่าย ตรงกับงานของผู้ใช้ และมีขั้นตอนชัดเจน[cite: 40, 52]
+                    </div>
+                </div>
+
+                <!-- Detailed Case Study Breakdown -->
+                <div class="p-5 bg-[#edf2f7] border border-slate-300 rounded-xl">
+                    <h3 class="font-bold text-base text-[#1a365d] mb-2"><i class="fa-solid fa-file-signature mr-1"></i> บทวิเคราะห์รายงาน Heuristic Evaluation (กรณีศึกษาเว็บไซต์ Hennepin County Library)[cite: 10]</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-slate-700 leading-relaxed">
+                        <div class="p-3 bg-white border border-slate-200 rounded-lg">
+                            <strong class="text-emerald-800 border-b border-emerald-200 pb-1 block mb-2">จุดแข็ง (Usability Strengths)[cite: 23]</strong>
+                            <p>• <strong>Visibility:</strong> มีหน้า "Registration Confirmation" แสดงผลยืนยันทันทีหลังลงทะเบียนคอร์ส[cite: 11]</p>
+                            <p>• <strong>User Freedom:</strong> มีเส้นทาง "Breadcrumbs" ด้านบนให้กดย้อนกลับหน้าหลักได้ง่ายเมื่อหลงทาง[cite: 13]</p>
+                            <p>• <strong>Recognition / Memory:</strong> มีฟีเจอร์ "Remind Me" ส่งอีเมลและ SMS แจ้งเตือนวันเวลากิจกรรม ช่วยลดภาระความจำของผู้ใช้[cite: 18]</p>
+                            <p>• <strong>Consistency:</strong> เลย์เอาต์หน้าหลักและหน้า Events มีโครงสร้างตำแหน่งแถบค้นหาและปฏิทินที่สม่ำเสมอกัน[cite: 14]</p>
+                        </div>
+                        <div class="p-3 bg-white border border-slate-200 rounded-lg">
+                            <strong class="text-rose-800 border-b border-rose-200 pb-1 block mb-2">จุดอ่อนที่ต้องแก้ไข (Usability Weaknesses)[cite: 23]</strong>
+                            <p>• <strong>Error Prevention (รุนแรงสุด):</strong> ไม่มีระบบป้องกันการส่งฟอร์มซ้ำ ผู้ใช้กดย้อนกลับและกดยืนยันซ้ำส่งผลให้ยึดที่นั่งในคลาสไปหลายที่โดยไม่ตั้งใจจนคลาสเต็ม[cite: 11, 17]</p>
+                            <p>• <strong>Consistency:</strong> หน้า Kid Events และ Teen Events มีการใช้โทนสีและแถบข้างที่ไม่สม่ำเสมอกับหน้าหลัก ทำให้ผู้ใช้สับสนว่าหลุดไปเว็บอื่นหรือไม่[cite: 15, 16]</p>
+                            <p>• <strong>Help & Documentation:</strong> เมนูช่วยเหลือ "Ask Us" ถูกซ่อนอยู่อีกแท็บ (Reference & Research) หาได้ยากเมื่ออยู่ในแท็บ Events & Classes[cite: 22]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 4: A/B TESTING -->
+        <section id="slide-q5" class="slide-content hidden">
+            <div class="slide-card rounded-2xl p-6 sm:p-8">
+                <div class="border-b border-stone-200 pb-4 mb-6 flex justify-between items-start">
+                    <div>
+                        <span class="text-xs font-bold text-[#2b4c7e] uppercase tracking-wider">Slide 04 / 05 • หัวข้อสอบข้อ 5</span>
+                        <h2 class="text-2xl font-bold text-slate-900 mt-1">A/B Testing (การทดสอบเปรียบเทียบส่วนต่อประสาน)</h2>
+                    </div>
+                    <span class="bg-[#f0ece1] text-[#2b4c7e] text-xs font-bold px-3 py-1 rounded-full">Optimization</span>
+                </div>
+
+                <p class="text-base text-slate-700 mb-6 leading-relaxed">
+                    A/B Testing (หรือ Split Testing) คือกระบวนการเปรียบเทียบการออกแบบส่วนต่อประสานตั้งแต่ง 2 รูปแบบขึ้นไป (Version A vs Version B) กับผู้ใช้จริงพร้อมกัน เพื่อประเมินว่าดีไซน์แบบใดให้ผลลัพธ์บรรลุเป้าหมายได้ดีที่สุด[cite: 36, 54]
+                </p>
+
+                <!-- Workflow Diagram Narrative -->
+                <div class="p-4 bg-[#edf2f7] border border-slate-300 rounded-xl mb-6">
+                    <h4 class="font-bold text-[#1a365d] text-sm mb-2"><i class="fa-solid fa-diagram-project mr-1"></i> ขั้นตอนการทำ A/B Testing[cite: 36]</h4>
+                    <p class="text-sm text-slate-700 leading-relaxed">
+                        กำหนด Metrics วัดความสำเร็จ → กำหนด Requirements → พัฒนาและ Deploy ทั้ง Version A และ Version B → เก็บข้อมูลและคำนวณ Metrics → เปรียบเทียบผลลัพธ์ทางสถิติ → นำเวอร์ชันที่ชนะไปใช้งานจริงอย่างเป็นทางการ (Fan out)[cite: 36]
+                    </p>
+                </div>
+
+                <!-- 3 Core Elements -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                    <div class="p-4 bg-[#fcfbf9] border border-stone-200 rounded-xl">
+                        <strong class="text-base text-[#2b4c7e] block mb-1">1. Goals (เป้าหมายการทดสอบ)[cite: 54]</strong>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            ตัววัดผลลัพธ์ที่ต้องการพัฒนาให้ดีขึ้น เช่น การเพิ่มอัตราการคลิกปุ่มสั่งซื้อ (CTR), การเพิ่ม ยอด Conversion Rate หรือการกรอกแบบฟอร์มลงทะเบียน[cite: 54]
+                        </p>
+                    </div>
+                    <div class="p-4 bg-[#fcfbf9] border border-stone-200 rounded-xl">
+                        <strong class="text-base text-[#2b4c7e] block mb-1">2. Variables (ตัวแปรทดสอบ)[cite: 54]</strong>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            รูปแบบที่นำมาเปรียบเทียบ โดยแบบเดิมเรียกว่า **Original** และแบบปรับปรุงเรียกว่า **Variation** (หากเปรียบเทียบ >2 แบบเรียกว่า A/B/N Testing)[cite: 54]
+                        </p>
+                    </div>
+                    <div class="p-4 bg-[#fcfbf9] border border-stone-200 rounded-xl">
+                        <strong class="text-base text-[#2b4c7e] block mb-1">3. Sample Group (กลุ่มตัวอย่าง)[cite: 54]</strong>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            กลุ่มผู้ใช้งานเว็บไซต์ที่ถูกสุ่มแบ่งเข้าชมแต่ละ Variation ในสัดส่วนที่เท่าๆ กัน (เช่น สุ่มแบ่ง 50% ให้เห็นปุ่มสีแดง และ 50% ให้เห็นปุ่มสีเขียว)[cite: 54]
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Landing Page & CTA Optimization -->
+                <div class="p-5 bg-[#fcfbf9] border border-stone-200 rounded-xl">
+                    <h3 class="font-bold text-base text-slate-900 mb-2 border-l-4 border-[#2b4c7e] pl-2">หลักการออกแบบ Landing Page & ปุ่ม Call to Action (CTA)</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-slate-700 leading-relaxed mt-2">
+                        <div>
+                            <p>• <strong>จุดประสงค์ต้องชัดเจนเพียงอย่างเดียว:</strong> Landing Page ต้องโฟกัสเป้าหมายเดียว เช่น เพื่อขายของ หรือเพื่อเก็บ Email List เท่านั้น[cite: 56]</p>
+                            <p class="mt-2">• <strong>ขอข้อมูลเฉพาะที่จำเป็น:</strong> ลดจำนวนฟิลด์ในแบบฟอร์มลงจะช่วยเพิ่มอัตราการลงทะเบียน (Conversion Rate) ได้ทันที[cite: 57]</p>
+                        </div>
+                        <div>
+                            <p>• <strong>ปุ่ม CTA ต้องสะดุดตาและชัดเจน:</strong> ทดสอบข้อความและสีปุ่ม เช่น การเปรียบเทียบระหว่างคำว่า "Learn More" กับ "Shop Now"[cite: 55, 58]</p>
+                            <p class="mt-2">• <strong>ระยะเวลาทดสอบที่เหมาะสม:</strong> ควรทำการทดลองอย่างน้อยที่สุด **14 วัน** เพื่อให้ครอบคลุมพฤติกรรมผู้ใช้ในรอบสัปดาห์[cite: 60]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 5: UNIVERSAL DESIGN -->
+        <section id="slide-q6" class="slide-content hidden">
+            <div class="slide-card rounded-2xl p-6 sm:p-8">
+                <div class="border-b border-stone-200 pb-4 mb-6 flex justify-between items-start">
+                    <div>
+                        <span class="text-xs font-bold text-[#2b4c7e] uppercase tracking-wider">Slide 05 / 05 • หัวข้อสอบข้อ 6</span>
+                        <h2 class="text-2xl font-bold text-slate-900 mt-1">Universal Design - UD (การออกแบบเพื่อทุกคน)</h2>
+                    </div>
+                    <span class="bg-[#f0ece1] text-[#2b4c7e] text-xs font-bold px-3 py-1 rounded-full">Accessibility</span>
+                </div>
+
+                <p class="text-base text-slate-700 mb-6 leading-relaxed">
+                    Universal Design (UD) คือปรัชญาการออกแบบผลิตภัณฑ์ ส่วนต่อประสานดิจิทัล และสภาพแวดล้อมเพื่อให้ทุกคนสามารถเข้าถึงและใช้งานได้อย่างเท่าเทียมมากที่สุด โดยไม่ต้องดัดแปลงหรือออกแบบเป็นพิเศษสำหรับกลุ่มใดกลุ่มหนึ่ง
+                </p>
+
+                <!-- 7 Principles of UD -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm leading-relaxed">
+                    <div class="p-4 bg-[#fcfbf9] border border-stone-200 rounded-xl">
+                        <strong class="text-[#2b4c7e] text-base block mb-1">1. Equitable Use (การใช้งานที่เท่าเทียม)</strong>
+                        <p class="text-slate-700">ทุกคนใช้งานได้เหมือนกัน ไม่ตีกรอบ กีดกัน หรือสร้างความแตกต่างให้ผู้ใช้กลุ่มใดกลุ่มหนึ่ง</p>
+                    </div>
+
+                    <div class="p-4 bg-[#fcfbf9] border border-stone-200 rounded-xl">
+                        <strong class="text-[#2b4c7e] text-base block mb-1">2. Flexibility in Use (ความยืดหยุ่นในการใช้งาน)</strong>
+                        <p class="text-slate-700">ยืดหยุ่น รองรับความถนัด ตัวเลือก และความเร็วการใช้งานที่แตกต่างกัน (เช่น คนถนัดซ้าย/ขวา)</p>
+                    </div>
+
+                    <div class="p-4 bg-[#fcfbf9] border border-stone-200 rounded-xl">
+                        <strong class="text-[#2b4c7e] text-base block mb-1">3. Simple and Intuitive Use (เรียบง่ายและเข้าใจง่าย)</strong>
+                        <p class="text-slate-700">ออกแบบให้เข้าใจง่ายโดยไม่ต้องพึ่งประสบการณ์ ระดับทักษะภาษา หรือความรู้ซับซ้อน</p>
+                    </div>
+
+                    <div class="p-4 bg-[#fcfbf9] border border-stone-200 rounded-xl">
+                        <strong class="text-[#2b4c7e] text-base block mb-1">4. Perceptible Information (การรับรู้ข้อมูลได้ชัดเจน)</strong>
+                        <p class="text-slate-700">สื่อสารข้อมูลผ่านหลายประสาทสัมผัส ใช้คอนทราสต์สีสูง มี Alt Text สำหรับภาพ เพื่อรองรับ VoiceOver / Screen Reader สำหรับผู้พิการทางสายตา[cite: 66]</p>
+                    </div>
+
+                    <div class="p-4 bg-[#fcfbf9] border border-stone-200 rounded-xl">
+                        <strong class="text-[#2b4c7e] text-base block mb-1">5. Tolerance for Error (การทนทานต่อความผิดพลาด)</strong>
+                        <p class="text-slate-700">ลดอันตรายและผลกระทบจากการกดผิด มีระบบแจ้งเตือนยืนยัน และมีปุ่ม Undo / Cancel ให้ย้อนกลับ[cite: 70]</p>
+                    </div>
+
+                    <div class="p-4 bg-[#fcfbf9] border border-stone-200 rounded-xl">
+                        <strong class="text-[#2b4c7e] text-base block mb-1">6. Low Physical Effort (การใช้แรงกายและสมองน้อยที่สุด)</strong>
+                        <p class="text-slate-700">ออกแบบให้ใช้งานได้สบาย ลดขั้นตอนการกดพิมพ์ที่ซ้ำซ้อน และลดภาระสมอง (Cognitive Overload)[cite: 3, 72]</p>
+                    </div>
+                </div>
+
+                <div class="mt-4 p-4 bg-[#fcfbf9] border border-stone-200 rounded-xl text-sm">
+                    <strong class="text-[#2b4c7e] text-base block mb-1">7. Size and Space for Approach and Use (ขนาดและพื้นที่ที่เหมาะสม)</strong>
+                    <p class="text-slate-700">ขนาดเป้าหมายปุ่มกด (Touch Target) ใหญ่พอสำหรับทุกขนาดนิ้ว และจัดระยะห่างระหว่างองค์ประกอบให้ใช้งานสะดวกบนทุกอุปกรณ์[cite: 47]</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 6: MOCK TEST & PRACTICE QUESTIONS -->
+        <section id="slide-mocktest" class="slide-content hidden">
+            <div class="slide-card rounded-2xl p-6 sm:p-8">
+                <div class="border-b border-stone-200 pb-4 mb-6 flex justify-between items-start">
+                    <div>
+                        <span class="text-xs font-bold text-[#2b4c7e] uppercase tracking-wider">Practice Exam • เก็งแนวข้อสอบแบบวิเคราะห์</span>
+                        <h2 class="text-2xl font-bold text-slate-900 mt-1">Mock Test แนวข้อสอบ Final (พร้อมเฉลยละเอียด)</h2>
+                    </div>
+                    <span class="bg-amber-100 text-amber-900 text-xs font-bold px-3 py-1 rounded-full">6 Scenario Questions</span>
+                </div>
+
+                <p class="text-sm text-slate-700 mb-6">
+                    แนวข้อสอบจำลองอิงตามขอบเขตข้อสอบจริง 6 ข้อ เน้นคำถามเชิงสถานการณ์และการประยุกต์ใช้ทฤษฎี สามารถกดดูเฉลยเพื่อตรวจคำตอบและอ่านแนวการตอบได้ทันที
+                </p>
+
+                <div class="space-y-5">
+                    <!-- Q1 -->
+                    <div class="p-5 bg-[#fcfbf9] rounded-xl border border-stone-200">
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="bg-[#2b4c7e] text-white font-bold text-xs px-2 py-0.5 rounded">ข้อสอบข้อ 1+3</span>
+                            <span class="font-bold text-slate-900 text-base">โจทย์สถานการณ์: Shneiderman’s 8 Golden Rules</span>
+                        </div>
+                        <p class="text-sm text-slate-700 mt-2 leading-relaxed">
+                            <strong>สถานการณ์:</strong> แอปพลิเคชันโอนเงินแห่งหนึ่ง เมื่อผู้ใช้กรอกเลขบัญชีผิด ระบบขึ้นข้อความเตือนว่า <span class="text-rose-600 font-mono">"Error 0x0008F: Invalid Database Query Terminated"</span> และไม่มีปุ่มให้ย้อนกลับ ต้องปิดแอปพลิเคชันแล้วเปิดใหม่เท่านั้น การออกแบบนี้ละเมิดกฎทองของ Shneiderman ข้อใดบ้าง และควรแก้ไขอย่างไร?
+                        </p>
+                        <button onclick="toggleAnswer('mock1')" class="mt-3 text-sm text-[#2b4c7e] font-semibold hover:underline flex items-center gap-1">
+                            <i class="fa-solid fa-key"></i> เฉลยและแนวทางการตอบ
+                        </button>
+                        <div id="mock1" class="hidden mt-3 p-4 bg-[#edf2f7] border border-slate-300 rounded-lg text-sm text-slate-800 leading-relaxed">
+                            <p><strong>การละเมิดกฎ:</strong></p>
+                            <p>1. <strong>Rule 5 (Error Handling):</strong> ละเมิดเนื่องจากใช้ข้อความ Error ทางเทคนิคที่เน้นระบบ (System-Centric) ทำให้ผู้ใช้ตกใจและไม่รู้วิธีแก้ไข[cite: 69, 70]</p>
+                            <p>2. <strong>Rule 6 (Reversal of Actions) & Rule 7 (Locus of Control):</strong> ละเมิดเนื่องจากไม่มีปุ่มย้อนกลับหรือทางออกฉุกเฉิน บังคับให้ต้องปิดแอปพลิเคชันใหม่[cite: 70, 71]</p>
+                            <p><strong>แนวทางแก้ไข:</strong> เปลี่ยนข้อความเตือนเป็นภาษามนุษย์ เช่น <em>"ไม่พบเลขบัญชีนี้ กรุณาตรวจสอบเลขบัญชีใหม่อีกครั้ง"</em> พร้อมไฮไลต์ช่องกรอกเงิน และใส่ปุ่ม "แก้ไขข้อมูล" ให้ผู้ใช้กดแก้ไขได้ทันที[cite: 69, 70]</p>
+                        </div>
+                    </div>
+
+                    <!-- Q2 -->
+                    <div class="p-5 bg-[#fcfbf9] rounded-xl border border-stone-200">
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="bg-[#2b4c7e] text-white font-bold text-xs px-2 py-0.5 rounded">ข้อสอบข้อ 2</span>
+                            <span class="font-bold text-slate-900 text-base">โจทย์สถานการณ์: Information Architecture & Card Sorting</span>
+                        </div>
+                        <p class="text-sm text-slate-700 mt-2 leading-relaxed">
+                            <strong>สถานการณ์:</strong> ทีมงานกำลังสร้างเว็บอีคอมเมิร์ซขายอุปกรณ์ไอที แต่พบว่าผู้ใช้มักหาหมวดหมู่สินค้าไม่เจอ หากต้องการทำวิจัยเพื่อวางจัดโครงสร้างเมนูใหม่ ควรเลือกใช้เทคนิค **Open Card Sorting** หรือ **Closed Card Sorting** เพราะเหตุใด? และจะป้องกันปรากฏการณ์ **Choice Overload Effect** ได้อย่างไร?
+                        </p>
+                        <button onclick="toggleAnswer('mock2')" class="mt-3 text-sm text-[#2b4c7e] font-semibold hover:underline flex items-center gap-1">
+                            <i class="fa-solid fa-key"></i> เฉลยและแนวทางการตอบ
+                        </button>
+                        <div id="mock2" class="hidden mt-3 p-4 bg-[#edf2f7] border border-slate-300 rounded-lg text-sm text-slate-800 leading-relaxed">
+                            <p><strong>การเลือกเทคนิค Card Sorting:</strong></p>
+                            <p>ควรเลือกใช้ **Open Card Sorting** เนื่องจากเป็นขั้นตอนการสร้าง IA ขึ้นมาใหม่ โดยให้ผู้ใช้จัดกลุ่มสินค้าและตั้งชื่อหมวดหมู่ตามความเข้าใจ (Mental Model) ของตนเองอย่างอิสระ ทำให้รู้ว่าผู้ใช้คิดอย่างไรในการหาของ[cite: 2, 25]</p>
+                            <p><strong>การป้องกัน Choice Overload Effect:</strong></p>
+                            <p>จัดกลุ่มเมนูหลักด้านบนให้มีจำนวนตัวเลือกที่พอดี (ไม่เกิน 5-7 หมวดหมู่หลัก)[cite: 5, 28] และใช้หลัก **Progressive Disclosure** โดยแสดงเฉพาะหมวดหมู่หลัก เมื่อผู้ใช้นำเมาส์ไปชี้หรือกดค่อยขยายหมวดหมู่ย่อยออกมา เพื่อไม่ให้ผู้ใช้ลังเลจนปิดเว็บหนี[cite: 5, 6, 28, 29]</p>
+                        </div>
+                    </div>
+
+                    <!-- Q3 -->
+                    <div class="p-5 bg-[#fcfbf9] rounded-xl border border-slate-200">
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="bg-[#2b4c7e] text-white font-bold text-xs px-2 py-0.5 rounded">ข้อสอบข้อ 4</span>
+                            <span class="font-bold text-slate-900 text-base">โจทย์สถานการณ์: Nielsen’s 10 Usability Heuristics</span>
+                        </div>
+                        <p class="text-sm text-slate-700 mt-2 leading-relaxed">
+                            <strong>สถานการณ์:</strong> จากรายงาน Heuristic Evaluation ของเว็บไซต์ห้องสมุด Hennepin County พบปัญหาว่า ผู้ใช้กดย้อนกลับแล้วกดส่งฟอร์มลงทะเบียนคอร์สซ้ำ ส่งผลให้ที่นั่งในคลาสเต็ม ปัญหานี้เกี่ยวกับ Heuristic ข้อใดของ Nielsen และมีแนวทางแก้ไขอย่างไร?[cite: 11, 17]
+                        </p>
+                        <button onclick="toggleAnswer('mock3')" class="mt-3 text-sm text-[#2b4c7e] font-semibold hover:underline flex items-center gap-1">
+                            <i class="fa-solid fa-key"></i> เฉลยและแนวทางการตอบ
+                        </button>
+                        <div id="mock3" class="hidden mt-3 p-4 bg-[#edf2f7] border border-slate-300 rounded-lg text-sm text-slate-800 leading-relaxed">
+                            <p><strong>Heuristic ที่เกี่ยวข้อง:</strong> ข้อ 5 **Error Prevention (การป้องกันความผิดพลาด)**[cite: 39, 47]</p>
+                            <p><strong>แนวทางแก้ไข:</strong></p>
+                            <p>1. เมื่อผู้ใช้กดปุ่ม "Register" แล้ว ให้ทำการ **Disable ปุ่ม** ทันที เพื่อป้องกันการกดซ้ำ[cite: 17, 47]</p>
+                            <p>2. เพิ่มระบบตรวจสอบฝั่งเซิร์ฟเวอร์ (Validation) หากชื่อและอีเมลเดิมเคยลงทะเบียนคอร์สนี้แล้ว ให้ขึ้นแจ้งเตือนว่า *"ท่านได้ลงทะเบียนคอร์สนี้เรียบร้อยแล้ว"* แทนการจองที่นั่งซ้ำ[cite: 11, 17]</p>
+                        </div>
+                    </div>
+
+                    <!-- Q4 -->
+                    <div class="p-5 bg-[#fcfbf9] rounded-xl border border-slate-200">
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="bg-[#2b4c7e] text-white font-bold text-xs px-2 py-0.5 rounded">ข้อสอบข้อ 5</span>
+                            <span class="font-bold text-slate-900 text-base">โจทย์สถานการณ์: A/B Testing</span>
+                        </div>
+                        <p class="text-sm text-slate-700 mt-2 leading-relaxed">
+                            <strong>สถานการณ์:</strong> ทีมการตลาดต้องการเพิ่มยอดคนสมัครรับข่าวสารบน Landing Page โดยต้องการทดสอบปุ่มสมัครระหว่างข้อความ "Subscribe" (สีเทา) กับ "รับข่าวสารฟรี" (สีส้ม) จงระบุองค์ประกอบหลัก 3 ประการของการทำ A/B Testing ในเคสนี้[cite: 54]
+                        </p>
+                        <button onclick="toggleAnswer('mock4')" class="mt-3 text-sm text-[#2b4c7e] font-semibold hover:underline flex items-center gap-1">
+                            <i class="fa-solid fa-key"></i> เฉลยและแนวทางการตอบ
+                        </button>
+                        <div id="mock4" class="hidden mt-3 p-4 bg-[#edf2f7] border border-slate-300 rounded-lg text-sm text-slate-800 leading-relaxed">
+                            <p>1. <strong>Goals (เป้าหมาย):</strong> เพิ่มอัตรา Conversion Rate หรือจำนวนคนกดสมัครรับข่าวสาร[cite: 54]</p>
+                            <p>2. <strong>Variables (ตัวแปร):</strong>[cite: 54]</p>
+                            <p>&nbsp;&nbsp;• <em>Original (Control):</em> ปุ่มข้อความ "Subscribe" สีเทาแบบเดิม[cite: 54]</p>
+                            <p>&nbsp;&nbsp;• <em>Variation (Test):</em> ปุ่มข้อความ "รับข่าวสารฟรี" สีส้มแบบใหม่[cite: 54]</p>
+                            <p>3. <strong>Sample Group (กลุ่มตัวอย่าง):</strong> สุ่มผู้เข้าชม Landing Page ออกเป็นสัดส่วน 50% ต่อ 50% ให้เห็นปุ่มคนละแบบ และทำการทดสอบอย่างน้อย 14 วัน[cite: 54, 60]</p>
+                        </div>
+                    </div>
+
+                    <!-- Q5 -->
+                    <div class="p-5 bg-[#fcfbf9] rounded-xl border border-slate-200">
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="bg-[#2b4c7e] text-white font-bold text-xs px-2 py-0.5 rounded">ข้อสอบข้อ 6</span>
+                            <span class="font-bold text-slate-900 text-base">โจทย์สถานการณ์: Universal Design (UD)</span>
+                        </div>
+                        <p class="text-sm text-slate-700 mt-2 leading-relaxed">
+                            <strong>สถานการณ์:</strong> การออกแบบเว็บไซต์หน่วยงานราชการให้สอดคล้องกับหลัก **Universal Design (UD)** เพื่อให้ผู้สูงอายุและผู้พิการทางสายตาสามารถเข้าถึงได้ ควรนำหลักการประการใดมาประยุกต์ใช้บ้าง?
+                        </p>
+                        <button onclick="toggleAnswer('mock5')" class="mt-3 text-sm text-[#2b4c7e] font-semibold hover:underline flex items-center gap-1">
+                            <i class="fa-solid fa-key"></i> เฉลยและแนวทางการตอบ
+                        </button>
+                        <div id="mock5" class="hidden mt-3 p-4 bg-[#edf2f7] border border-slate-300 rounded-lg text-sm text-slate-800 leading-relaxed">
+                            <p>1. <strong>Perceptible Information:</strong> เพิ่มตัวเลือกปรับขนาดฟอนต์, ใช้สีที่มี Contrast สูง และใส่ Alt Text คำอธิบายภาพเพื่อให้โปรแกรมอ่านหน้าจอ (Screen Reader / VoiceOver) อ่านให้ผู้พิการทางสายตาฟังได้[cite: 66]</p>
+                            <p>2. <strong>Equitable Use & Simple Use:</strong> ออกแบบเมนูนำทางให้เรียบง่าย ใช้คำภาษาไทยพื้นฐานที่ไม่ซับซ้อน[cite: 39]</p>
+                            <p>3. <strong>Size and Space for Approach:</strong> ปรับขนาดปุ่มกดและช่องว่างให้ใหญ่พอที่จะใช้นิ้วแตะหรือเมาส์คลิกได้ง่ายโดยไม่กดผิด[cite: 47]</p>
+                        </div>
+                    </div>
+
+                    <!-- Q6 -->
+                    <div class="p-5 bg-[#fcfbf9] rounded-xl border border-slate-200">
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="bg-[#2b4c7e] text-white font-bold text-xs px-2 py-0.5 rounded">ข้อสอบทบทวน</span>
+                            <span class="font-bold text-slate-900 text-base">โจทย์เปรียบเทียบ: Recognition vs Recall</span>
+                        </div>
+                        <p class="text-sm text-slate-700 mt-2 leading-relaxed">
+                            <strong>สถานการณ์:</strong> จงอธิบายความแตกต่างระหว่าง **Recognition** และ **Recall** ในงาน UX Design พร้อมยกตัวอย่าง UI ที่ดีในการช่วยลดภาระสมองของผู้ใช้[cite: 40, 48, 72]
+                        </p>
+                        <button onclick="toggleAnswer('mock6')" class="mt-3 text-sm text-[#2b4c7e] font-semibold hover:underline flex items-center gap-1">
+                            <i class="fa-solid fa-key"></i> เฉลยและแนวทางการตอบ
+                        </button>
+                        <div id="mock6" class="hidden mt-3 p-4 bg-[#edf2f7] border border-slate-300 rounded-lg text-sm text-slate-800 leading-relaxed">
+                            <p>• <strong>Recall (การนึกจำ):</strong> ผู้ใช้ต้องดึงข้อมูลจากความจำเอง เช่น หน้าจอ Command Line (CLI) ที่ผู้ใช้ต้องจำคำสั่งพิมพ์เองทั้งหมด ซึ่งสร้างภาระสมองอย่างมาก[cite: 72]</p>
+                            <p>• <strong>Recognition (การจำได้จากตัวเลือก):</strong> ผู้ใช้แค่แยกแยะและเลือกจากสิ่งที่เห็น เช่น แถบ Dropdown, เมนูไอคอน หรือระบบ Auto-complete ค้นหาคำ[cite: 48, 72]</p>
+                            <p>• <strong>หลักการใน UX:</strong> ออกแบบเน้น **Recognition over Recall** เสมอเพื่อลด Short-Term Memory Load ของผู้ใช้[cite: 40, 48, 72]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Scripts -->
+    <script>
+        function switchSlide(slideId) {
+            document.querySelectorAll('.slide-content').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('tab-btn-active'));
+
+            document.getElementById('slide-' + slideId).classList.remove('hidden');
+            document.getElementById('tab-' + slideId).classList.add('tab-btn-active');
+        }
+
+        function toggleAnswer(id) {
+            document.getElementById(id).classList.toggle('hidden');
+        }
+
+        // Initialize Slide 1
+        switchSlide('q1_3');
+    </script>
+</body>
+</html>
