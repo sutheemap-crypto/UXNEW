@@ -30,21 +30,19 @@
 </head>
 <body class="min-h-screen pb-16 antialiased">
 
-    <!-- Top Slide Banner Header -->
+    <!-- Top Header -->
     <header class="bg-[#2b4c7e] text-white shadow-md border-b border-[#1f3a63] sticky top-0 z-50">
         <div class="max-w-5xl mx-auto px-4 py-4 sm:px-6">
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
                 <div>
                     <div class="flex items-center gap-2">
-                        <span class="bg-amber-400 text-[#1f3a63] font-bold text-xs px-2.5 py-0.5 rounded-full uppercase tracking-wide">Final Exam Guide</span>
+                        <span class="bg-amber-400 text-[#1f3a63] font-bold text-xs px-2.5 py-0.5 rounded-full uppercase tracking-wide">Final Exam Prep</span>
                         <span class="text-blue-200 text-xs">วิชา HCI & UX/UI Design</span>
                     </div>
-                    <h1 class="text-xl sm:text-2xl font-bold mt-1 text-white">คลังสรุปเนื้อหาเตรียมสอบ Final</h1>
+                    <h1 class="text-xl sm:text-2xl font-bold mt-1 text-white">คลังสรุปเนื้อหาเจาะลึก + ข้อสอบจำลอง (Mock Test)</h1>
                 </div>
-                <div class="text-xs bg-white/10 px-3.5 py-2 rounded-lg border border-white/15 text-blue-100 flex gap-4">
-                    <div><i class="fa-regular fa-calendar mr-1"></i>22 ต.ค. 2569</div>
-                    <div><i class="fa-regular fa-clock mr-1"></i>13.00 - 16.00 น.</div>
-                    <div><i class="fa-solid fa-location-dot mr-1"></i>SC.3201</div>
+                <div class="text-xs bg-white/10 px-3.5 py-2 rounded-lg border border-white/15 text-blue-100 flex items-center gap-2">
+                    <i class="fa-solid fa-book-open"></i> สรุปครบ 6 หัวข้อตามไกด์สอบ
                 </div>
             </div>
 
@@ -55,7 +53,7 @@
                 <button onclick="switchSlide('q4')" id="tab-q4" class="tab-btn px-4 py-1.5 rounded-md text-blue-100 hover:bg-white/10 transition whitespace-nowrap">Slide 3: 10 Usability Heuristics</button>
                 <button onclick="switchSlide('q5')" id="tab-q5" class="tab-btn px-4 py-1.5 rounded-md text-blue-100 hover:bg-white/10 transition whitespace-nowrap">Slide 4: A/B Testing</button>
                 <button onclick="switchSlide('q6')" id="tab-q6" class="tab-btn px-4 py-1.5 rounded-md text-blue-100 hover:bg-white/10 transition whitespace-nowrap">Slide 5: Universal Design</button>
-                <button onclick="switchSlide('quiz')" id="tab-quiz" class="tab-btn px-4 py-1.5 rounded-md text-amber-300 hover:bg-white/10 transition whitespace-nowrap"><i class="fa-solid fa-pen-to-square mr-1"></i>แนวข้อสอบ & Quiz</button>
+                <button onclick="switchSlide('quiz')" id="tab-quiz" class="tab-btn px-4 py-1.5 rounded-md text-amber-300 hover:bg-white/10 transition whitespace-nowrap"><i class="fa-solid fa-pen-to-square mr-1"></i>Mock Test (8 ข้อ)</button>
             </nav>
         </div>
     </header>
@@ -66,325 +64,19 @@
         <!-- SLIDE 1: SHNEIDERMAN'S 8 GOLDEN RULES -->
         <section id="slide-q1_3" class="slide-content block">
             <div class="slide-card rounded-2xl p-6 sm:p-8">
-                <!-- Slide Header -->
                 <div class="border-b border-stone-200 pb-4 mb-6 flex justify-between items-start">
                     <div>
-                        <span class="text-xs font-bold text-[#2b4c7e] uppercase tracking-wider">Slide 01 / 05 • หัวข้อสอบข้อ 1 และ ข้อ 3</span>
+                        <span class="text-xs font-bold text-[#2b4c7e] uppercase tracking-wider">Slide 01 / 05 • ข้อสอบข้อ 1 และ ข้อ 3</span>
                         <h2 class="text-2xl font-bold text-slate-900 mt-1">Shneiderman’s Eight Golden Rules (กฎทอง 8 ประการ)</h2>
                     </div>
-                    <span class="bg-[#f0ece1] text-[#2b4c7e] text-xs font-bold px-3 py-1 rounded-full">HCI Core Principles</span>
+                    <span class="bg-[#f0ece1] text-[#2b4c7e] text-xs font-bold px-3 py-1 rounded-full">HCI Principles</span>
                 </div>
 
                 <p class="text-base text-slate-700 mb-6 leading-relaxed">
-                    กฎทองคำ 8 ประการโดย ศาสตราจารย์ Ben Shneiderman (1986) เป็นกรอบแนวคิดหลักในการออกแบบและวินิจฉัย User Interface เพื่อสร้างประสบการณ์ใช้งานที่สมบูรณ์และลดความผิดพลาดของผู้ใช้[span_0](start_span)[span_0](end_span)[span_1](start_span)[span_1](end_span)
+                    กฎทองคำ 8 ประการคิดค้นโดยศาสตราจารย์ Ben Shneiderman (1986) เป็นเครื่องมือวินิจฉัยและวางโครงสร้าง UI เพื่อช่วยให้การปฏิสัมพันธ์ระหว่างมนุษย์กับคอมพิวเตอร์เป็นธรรมชาติและลดภาระสมองของผู้ใช้
                 </p>
 
-                <!-- Grid Rules -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                     <div class="p-4 bg-[#fcfbf9] rounded-xl border border-stone-200">
-                        <div class="font-bold text-slate-900 text-base mb-1 text-[#2b4c7e]">1. Strive for Consistency (ความสม่ำเสมอ)</div>
-                        <p class="text-sm text-slate-700 leading-relaxed">ใช้โทนสี ปุ่ม สัญลักษณ์ และเลย์เอาต์สม่ำเสมอกันทั้งระบบเพื่อลดระยะเวลาการเรียนรู้ (Learning Curve)[span_2](start_span)[span_2](end_span)[span_3](start_span)[span_3](end_span) ประยุกต์ใช้ Component-Driven และ Design Tokens เป็นมาตรฐาน[span_4](start_span)[span_4](end_span)</p>
-                    </div>
-
-                    <div class="p-4 bg-[#fcfbf9] rounded-xl border border-stone-200">
-                        <div class="font-bold text-slate-900 text-base mb-1 text-[#2b4c7e]">2. Seek Universal Usability / Enable Shortcuts (รองรับผู้ใช้ทุกระดับ)</div>
-                        <p class="text-sm text-slate-700 leading-relaxed">ผู้ใช้มือใหม่ (Novice) ต้องการ Tooltips และคำแนะนำแบบ Step-by-step[span_5](start_span)[span_5](end_span) ขณะที่ผู้เชี่ยวชาญ (Expert) ต้องการ คีย์ลัด (Shortcuts) เพื่อข้ามขั้นตอน[span_6](start_span)[span_6](end_span) คำนึงถึง Accessibility เช่น VoiceOver[span_7](start_span)[span_7](end_span)</p>
-                    </div>
-
-                    <div class="p-4 bg-[#fcfbf9] rounded-xl border border-stone-200">
-                        <div class="font-bold text-slate-900 text-base mb-1 text-[#2b4c7e]">3. Offer Informative Feedback (ตอบสนองที่ให้ข้อมูลเสมอ)</div>
-                        <p class="text-sm text-slate-700 leading-relaxed">ทุก Action (Input) ระบบต้องตอบสนอง Output ทันที[span_8](start_span)[span_8](end_span) งานขนาดเล็กใช้การเปลี่ยนสีไอคอน[span_9](start_span)[span_9](end_span) ส่วนงานที่ใช้เวลานานต้องแสดง Progress Bar หรือ % ความคืบหน้า[span_10](start_span)[span_10](end_span)</p>
-                    </div>
-
-                    <div class="p-4 bg-[#fcfbf9] rounded-xl border border-stone-200">
-                        <div class="font-bold text-slate-900 text-base mb-1 text-[#2b4c7e]">4. Design Dialog to Yield Closure (ออกแบบให้มีจุดจบชัดเจน)</div>
-                        <p class="text-sm text-slate-700 leading-relaxed">กระบวนการทำงานต้องมีจุดเริ่มต้น ดำเนินการ และจุดจบสมบูรณ์[span_11](start_span)[span_11](end_span) แสดงข้อความเช่น "Installation Complete" หรือ "Thank You" เพื่อปลดล็อกความกังวลใจ[span_12](start_span)[span_12](end_span)</p>
-                    </div>
-
-                    <div class="p-4 bg-[#fcfbf9] rounded-xl border border-stone-200">
-                        <div class="font-bold text-slate-900 text-base mb-1 text-[#2b4c7e]">5. Offer Simple Error Handling (จัดการข้อผิดพลาดอย่างชาญฉลาด)</div>
-                        <p class="text-sm text-slate-700 leading-relaxed">หลีกเลี่ยงการลงโทษผู้ใช้ด้วยรหัส Error ทางเทคนิค (System-Centric)[span_13](start_span)[span_13](end_span)[span_14](start_span)[span_14](end_span) แต่ต้องตรวจจับข้อมูล Real-time และบอกวิธีแก้ไขด้วยภาษาคน (User-Centric)[span_15](start_span)[span_15](end_span)[span_16](start_span)[span_16](end_span)</p>
-                    </div>
-
-                    <div class="p-4 bg-[#fcfbf9] rounded-xl border border-stone-200">
-                        <div class="font-bold text-slate-900 text-base mb-1 text-[#2b4c7e]">6. Permit Easy Reversal of Actions (อนุญาตให้ย้อนกลับได้เสมอ)</div>
-                        <p class="text-sm text-slate-700 leading-relaxed">สร้างเบาะรองรับความปลอดภัย (Safety Net) เช่น ปุ่ม Undo / Redo, Cancel หรือ Back เพื่อให้ผู้ใช้กล้าทดลองใช้งานโดยไม่กลัวระบบพัง[span_17](start_span)[span_17](end_span)</p>
-                    </div>
-
-                    <div class="p-4 bg-[#fcfbf9] rounded-xl border border-stone-200">
-                        <div class="font-bold text-slate-900 text-base mb-1 text-[#2b4c7e]">7. Support Internal Locus of Control (ผู้ใช้เป็นผู้ควบคุม)</div>
-                        <p class="text-sm text-slate-700 leading-relaxed">ทำให้ผู้ใช้รู้สึกว่าตนเป็นผู้กุมบังเหียน (User-Initiated) สามารถยกเลิก ย้อนกลับ หรือ Force Quit (Emergency Exit) ได้ตลอดเวลา[span_18](start_span)[span_18](end_span)</p>
-                    </div>
-
-                    <div class="p-4 bg-[#fcfbf9] rounded-xl border border-stone-200">
-                        <div class="font-bold text-slate-900 text-base mb-1 text-[#2b4c7e]">8. Reduce Short-Term Memory Load (ลดภาระความจำ)</div>
-                        <p class="text-sm text-slate-700 leading-relaxed">สมองมนุษย์จำความจำระยะสั้นได้จำกัดเพียง 5±2 Items[span_19](start_span)[span_19](end_span) ควรใช้หลัก Recognition over Recall เช่น Dropdown หรือ Autofill แทนการให้นึกเอง[span_20](start_span)[span_20](end_span)</p>
-                    </div>
-                </div>
-
-                <!-- AI Highlight Box -->
-                <div class="mt-6 p-5 bg-[#edf2f7] border border-slate-300 rounded-xl">
-                    <h4 class="font-bold text-[#1a365d] text-base mb-2 flex items-center gap-2">
-                        <i class="fa-solid fa-robot"></i> การประยุกต์ใช้กฎ 8 ข้อในยุค Generative AI[span_21](start_span)[span_21](end_span)
-                    </h4>
-                    <ul class="list-disc list-inside text-sm text-slate-700 space-y-1 leading-relaxed">
-                        <li><strong>Rule 3 (Feedback):</strong> แสดงอนิเมชันเคอร์เซอร์กระพริบขณะ AI กำลังคิด (Streaming response)[span_22](start_span)[span_22](end_span)</li>
-                        <li><strong>Rule 5 (Error):</strong> ขึ้นข้อความ "AI ไม่เข้าใจคำสั่ง โปรดระบุบริบทเพิ่มเติม" แทน Error ทางเทคนิค[span_23](start_span)[span_23](end_span)</li>
-                        <li><strong>Rule 7 (Control):</strong> มีปุ่ม Stop Generating ให้ผู้ใช้สั่งหยุดกระบวนการ AI ได้ทันที[span_24](start_span)[span_24](end_span)</li>
-                        <li><strong>Rule 8 (Memory):</strong> เสนอ 'Suggested Prompts' ให้เลือกแทนที่จะให้ผู้ใช้คิดคำสั่งเองจากศูนย์[span_25](start_span)[span_25](end_span)</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- SLIDE 2: INFORMATION ARCHITECTURE -->
-        <section id="slide-q2" class="slide-content hidden">
-            <div class="slide-card rounded-2xl p-6 sm:p-8">
-                <div class="border-b border-stone-200 pb-4 mb-6 flex justify-between items-start">
-                    <div>
-                        <span class="text-xs font-bold text-[#2b4c7e] uppercase tracking-wider">Slide 02 / 05 • หัวข้อสอบข้อ 2</span>
-                        <h2 class="text-2xl font-bold text-slate-900 mt-1">Information Architecture (Card Sorting / Sitemap)</h2>
-                    </div>
-                    <span class="bg-[#f0ece1] text-[#2b4c7e] text-xs font-bold px-3 py-1 rounded-full">IA & Navigation</span>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-                    <div class="p-4 bg-[#fcfbf9] rounded-xl border border-stone-200">
-                        <span class="text-[#2b4c7e] font-bold text-base block mb-1"><i class="fa-solid fa-bullseye mr-1"></i> เป้าหมายสูงสุดของ IA</span>
-                        <p class="text-sm text-slate-700 leading-relaxed">คือ <strong>Findability (การหาของให้เจอ)</strong> เพื่อแก้ปัญหาข้อมูลล้นทะลัก (Digital Overload) ในยุคปัจจุบัน[span_26](start_span)[span_26](end_span)[span_27](start_span)[span_27](end_span)</p>
-                    </div>
-                    <div class="p-4 bg-[#fcfbf9] rounded-xl border border-stone-200">
-                        <span class="text-[#2b4c7e] font-bold text-base block mb-1"><i class="fa-solid fa-cubes mr-1"></i> IA vs UX</span>
-                        <p class="text-sm text-slate-700 leading-relaxed">IA เปรียบเสมือน <strong>โครงกระดูก (Logic & Structure)</strong> ส่วน UX เปรียบเสมือน <strong>ความรู้สึก (Emotion & Experience)</strong>[span_28](start_span)[span_28](end_span)[span_29](start_span)[span_29](end_span)</p>
-                    </div>
-                    <div class="p-4 bg-[#fcfbf9] rounded-xl border border-stone-200">
-                        <span class="text-[#2b4c7e] font-bold text-base block mb-1"><i class="fa-solid fa-filter mr-1"></i> Choice Overload</span>
-                        <p class="text-sm text-slate-700 leading-relaxed">การมีทางเลือกมากไปทำให้เกิดความลังเล[span_30](start_span)[span_30](end_span)[span_31](start_span)[span_31](end_span) (24 รส ซื้อ 3% / 6 รส ซื้อ 30%)[span_32](start_span)[span_32](end_span)[span_33](start_span)[span_33](end_span) IA ที่ดีต้องจำกัดตัวเลือกให้พอดี[span_34](start_span)[span_34](end_span)[span_35](start_span)[span_35](end_span)</p>
-                    </div>
-                </div>
-
-                <div class="space-y-4">
-                    <div class="p-5 bg-[#fcfbf9] rounded-xl border border-stone-200">
-                        <h3 class="font-bold text-base text-slate-900 mb-2 border-l-4 border-[#2b4c7e] pl-2">ศาสตร์การจัดระเบียบเนื้อหาหน้าจอ (Content Organization)[span_36](start_span)[span_36](end_span)[span_37](start_span)[span_37](end_span)</h3>
-                        <ul class="text-sm text-slate-700 space-y-2 list-disc list-inside leading-relaxed">
-                            <li><strong>Object (การจัดกลุ่ม):</strong> จัดกลุ่มวัตถุประเภทเดียวกันไว้ด้วยกันเพื่อให้ค้นหาง่ายที่สุด[span_38](start_span)[span_38](end_span)[span_39](start_span)[span_39](end_span)</li>
-                            <li><strong>Disclosure (การเปิดเผยข้อมูล):</strong> แสดงเฉพาะข้อความที่จำเป็น หากสนใจค่อยกดอ่านเพิ่ม ป้องกันข้อมูลล้นจอ[span_40](start_span)[span_40](end_span)[span_41](start_span)[span_41](end_span)</li>
-                            <li><strong>Example (ตัวอย่าง):</strong> แสดงภาพประกอบตัวอย่างในหมวดหมู่เพื่อให้สมองแยกแยะได้เร็วขึ้น[span_42](start_span)[span_42](end_span)[span_43](start_span)[span_43](end_span)</li>
-                        </ul>
-                    </div>
-
-                    <div class="p-5 bg-[#fcfbf9] rounded-xl border border-stone-200">
-                        <h3 class="font-bold text-base text-slate-900 mb-2 border-l-4 border-[#2b4c7e] pl-2">ระบบนำทาง (Navigation) & Card Sorting</h3>
-                        <div class="text-sm text-slate-700 space-y-2 leading-relaxed">
-                            <p>• <strong>Front Doors (ประตูหน้าบ้าน):</strong> ไม่ว่าเข้ามาจากหน้าไหน ต้องทำให้เห็นภาพทันทีว่าทำอะไรได้บ้างและไปหน้าถัดไปอย่างไร[span_44](start_span)[span_44](end_span)[span_45](start_span)[span_45](end_span)</p>
-                            <p>• <strong>Open Card Sorting:</strong> ให้ผู้ใช้จัดกลุ่มและตั้งชื่อหมวดหมู่เองอย่างอิสระ (ใช้สร้าง IA ใหม่)</p>
-                            <p>• <strong>Closed Card Sorting:</strong> ให้ผู้ใช้จัดกลุ่มลงในหมวดหมู่ที่มีให้อยู่แล้ว (ใช้ทดสอบโครงสร้างเดิม)</p>
-                            <p>• <strong>Sitemap:</strong> ผังแสดงลำดับชั้นความสัมพันธ์ของทุกหน้าในระบบดิจิทัล</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SLIDE 3: NIELSEN'S 10 HEURISTICS -->
-        <section id="slide-q4" class="slide-content hidden">
-            <div class="slide-card rounded-2xl p-6 sm:p-8">
-                <div class="border-b border-stone-200 pb-4 mb-6 flex justify-between items-start">
-                    <div>
-                        <span class="text-xs font-bold text-[#2b4c7e] uppercase tracking-wider">Slide 03 / 05 • หัวข้อสอบข้อ 4</span>
-                        <h2 class="text-2xl font-bold text-slate-900 mt-1">Nielsen’s 10 Usability Heuristics Evaluation</h2>
-                    </div>
-                    <span class="bg-[#f0ece1] text-[#2b4c7e] text-xs font-bold px-3 py-1 rounded-full">Usability Inspection</span>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm mb-6">
-                    <div class="p-3.5 bg-[#fcfbf9] border border-stone-200 rounded-xl">
-                        <span class="font-bold text-[#2b4c7e]">1. Visibility of System Status:</span> แจ้งสถานะระบบด้วย Feedback ที่เหมาะสมและรวดเร็ว[span_46](start_span)[span_46](end_span)[span_47](start_span)[span_47](end_span)
-                    </div>
-                    <div class="p-3.5 bg-[#fcfbf9] border border-stone-200 rounded-xl">
-                        <span class="font-bold text-[#2b4c7e]">2. Match System & Real World:</span> ใช้ภาษา/แนวคิดที่ผู้ใช้คุ้นเคยในชีวิตจริง[span_48](start_span)[span_48](end_span)[span_49](start_span)[span_49](end_span)
-                    </div>
-                    <div class="p-3.5 bg-[#fcfbf9] border border-stone-200 rounded-xl">
-                        <span class="font-bold text-[#2b4c7e]">3. User Control & Freedom:</span> มีทางออกฉุกเฉิน / ปุ่ม Cancel / Undo / Breadcrumbs[span_50](start_span)[span_50](end_span)[span_51](start_span)[span_51](end_span)[span_52](start_span)[span_52](end_span)
-                    </div>
-                    <div class="p-3.5 bg-[#fcfbf9] border border-stone-200 rounded-xl">
-                        <span class="font-bold text-[#2b4c7e]">4. Consistency & Standards:</span> ใช้มาตรฐานเดียวกันทั้งระบบ ไม่สื่อความหมายต่างกัน[span_53](start_span)[span_53](end_span)[span_54](start_span)[span_54](end_span)
-                    </div>
-                    <div class="p-3.5 bg-[#fcfbf9] border border-stone-200 rounded-xl">
-                        <span class="font-bold text-[#2b4c7e]">5. Error Prevention:</span> ออกแบบเพื่อป้องกันความผิดพลาดตั้งแต่แรก[span_55](start_span)[span_55](end_span)[span_56](start_span)[span_56](end_span)
-                    </div>
-                    <div class="p-3.5 bg-[#fcfbf9] border border-stone-200 rounded-xl">
-                        <span class="font-bold text-[#2b4c7e]">6. Recognition over Recall:</span> เน้นการจำได้จากตัวเลือก ดีกว่าการนึกจำข้อมูลเอง[span_57](start_span)[span_57](end_span)[span_58](start_span)[span_58](end_span)
-                    </div>
-                    <div class="p-3.5 bg-[#fcfbf9] border border-stone-200 rounded-xl">
-                        <span class="font-bold text-[#2b4c7e]">7. Flexibility & Efficiency:</span> มี Accelerators / คีย์ลัดเร่งความเร็วให้ผู้เชี่ยวชาญ[span_59](start_span)[span_59](end_span)[span_60](start_span)[span_60](end_span)
-                    </div>
-                    <div class="p-3.5 bg-[#fcfbf9] border border-stone-200 rounded-xl">
-                        <span class="font-bold text-[#2b4c7e]">8. Aesthetic & Minimalist Design:</span> แสดงเฉพาะข้อมูลที่จำเป็น ใช้ White Space[span_61](start_span)[span_61](end_span)[span_62](start_span)[span_62](end_span)[span_63](start_span)[span_63](end_span)
-                    </div>
-                    <div class="p-3.5 bg-[#fcfbf9] border border-stone-200 rounded-xl">
-                        <span class="font-bold text-[#2b4c7e]">9. Recover from Errors:</span> Error Message ชัดเจน เป็นภาษาคน และบอกวิธีแก้[span_64](start_span)[span_64](end_span)[span_65](start_span)[span_65](end_span)
-                    </div>
-                    <div class="p-3.5 bg-[#fcfbf9] border border-stone-200 rounded-xl">
-                        <span class="font-bold text-[#2b4c7e]">10. Help & Documentation:</span> มีส่วนช่วยเหลือและคู่มือที่ค้นหาง่าย[span_66](start_span)[span_66](end_span)[span_67](start_span)[span_67](end_span)
-                    </div>
-                </div>
-
-                <div class="p-5 bg-[#edf2f7] border border-slate-300 rounded-xl">
-                    <h3 class="font-bold text-base text-[#1a365d] mb-2"><i class="fa-solid fa-file-signature mr-1"></i> กรณีศึกษาเคสจริง: Hennepin County Library Report[span_68](start_span)[span_68](end_span)</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-slate-700 leading-relaxed">
-                        <div class="p-3 bg-white border border-slate-200 rounded-lg">
-                            <strong class="text-emerald-800">จุดแข็ง (Strengths):</strong>
-                            <p class="mt-1">• มี Registration Confirmation หลังส่งฟอร์ม (Visibility)[span_69](start_span)[span_69](end_span)</p>
-                            <p>• มี Breadcrumbs ช่วยบอกตำแหน่งย้อนกลับ (Freedom)[span_70](start_span)[span_70](end_span)</p>
-                            <p>• มีฟีเจอร์ "Remind Me" ส่ง SMS/Email ลดภาระจำ (Memory)[span_71](start_span)[span_71](end_span)</p>
-                        </div>
-                        <div class="p-3 bg-white border border-slate-200 rounded-lg">
-                            <strong class="text-rose-800">จุดอ่อน (Weaknesses):</strong>
-                            <p class="mt-1">• ขาด Error Prevention กดลงทะเบียนซ้ำซ้อนจนที่นั่งเต็มโดยไม่รู้ตัว[span_72](start_span)[span_72](end_span)[span_73](start_span)[span_73](end_span)</p>
-                            <p>• ขาด Consistency เรื่องสีและเลย์เอาต์ในหน้า Kid/Teen Events[span_74](start_span)[span_74](end_span)</p>
-                            <p>• เมนู Help/Ask Us เข้าถึงยากเนื่องจากถูกซ่อนอยู่อีกแท็บ[span_75](start_span)[span_75](end_span)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SLIDE 4: A/B TESTING -->
-        <section id="slide-q5" class="slide-content hidden">
-            <div class="slide-card rounded-2xl p-6 sm:p-8">
-                <div class="border-b border-stone-200 pb-4 mb-6 flex justify-between items-start">
-                    <div>
-                        <span class="text-xs font-bold text-[#2b4c7e] uppercase tracking-wider">Slide 04 / 05 • หัวข้อสอบข้อ 5</span>
-                        <h2 class="text-2xl font-bold text-slate-900 mt-1">A/B Testing (การทดสอบเปรียบเทียบ UI)</h2>
-                    </div>
-                    <span class="bg-[#f0ece1] text-[#2b4c7e] text-xs font-bold px-3 py-1 rounded-full">Optimization</span>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-                    <div class="p-4 bg-[#fcfbf9] border border-stone-200 rounded-xl">
-                        <strong class="text-base text-[#2b4c7e] block mb-1">1. Goals (เป้าหมาย)[span_76](start_span)[span_76](end_span)</strong>
-                        <p class="text-sm text-slate-700 leading-relaxed">ตัววัดผลที่ต้องการพัฒนา เช่น อัตราคลิกสั่งซื้อ (CTR) หรือยอดส่งแบบฟอร์ม[span_77](start_span)[span_77](end_span)</p>
-                    </div>
-                    <div class="p-4 bg-[#fcfbf9] border border-stone-200 rounded-xl">
-                        <strong class="text-base text-[#2b4c7e] block mb-1">2. Variables (ตัวแปร)[span_78](start_span)[span_78](end_span)</strong>
-                        <p class="text-sm text-slate-700 leading-relaxed">เปรียบเทียบระหว่าง <strong>Original</strong> (แบบเดิม) กับ <strong>Variation</strong> (แบบใหม่)[span_79](start_span)[span_79](end_span)</p>
-                    </div>
-                    <div class="p-4 bg-[#fcfbf9] border border-stone-200 rounded-xl">
-                        <strong class="text-base text-[#2b4c7e] block mb-1">3. Sample Group (กลุ่มตัวอย่าง)[span_80](start_span)[span_80](end_span)</strong>
-                        <p class="text-sm text-slate-700 leading-relaxed">สุ่มแบ่งสัดส่วนผู้ใช้เท่าๆ กัน เช่น 50% เห็นปุ่มแดง และ 50% เห็นปุ่มเขียว[span_81](start_span)[span_81](end_span)</p>
-                    </div>
-                </div>
-
-                <div class="p-5 bg-[#fcfbf9] border border-stone-200 rounded-xl">
-                    <h3 class="font-bold text-base text-slate-900 mb-2 border-l-4 border-[#2b4c7e] pl-2">หลักการออกแบบ Landing Page & CTA สำหรับ A/B Testing</h3>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-700 leading-relaxed">
-                        <p>• <strong>โฟกัสจุดประสงค์เดียว:</strong> เช่น ขออีเมล หรือขายของ[span_82](start_span)[span_82](end_span)</p>
-                        <p>• <strong>ขอข้อมูลเฉพาะที่จำเป็น:</strong> ฟอร์มสั้นช่วยเพิ่ม Conversion Rate[span_83](start_span)[span_83](end_span)</p>
-                        <p>• <strong>ปุ่ม CTA ต้องเด่นชัด:</strong> เช่น เปรียบเทียบ "Learn More" vs "Shop Now[span_84](start_span)[span_85](start_span)"[span_84](end_span)[span_85](end_span)</p>
-                        <p>• <strong>ระยะเวลาทดสอบ:</strong> ควรทดสอบอย่างน้อยที่สุด 14 วัน[span_86](start_span)[span_86](end_span)</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SLIDE 5: UNIVERSAL DESIGN -->
-        <section id="slide-q6" class="slide-content hidden">
-            <div class="slide-card rounded-2xl p-6 sm:p-8">
-                <div class="border-b border-stone-200 pb-4 mb-6 flex justify-between items-start">
-                    <div>
-                        <span class="text-xs font-bold text-[#2b4c7e] uppercase tracking-wider">Slide 05 / 05 • หัวข้อสอบข้อ 6</span>
-                        <h2 class="text-2xl font-bold text-slate-900 mt-1">Universal Design - UD (การออกแบบเพื่อทุกคน)</h2>
-                    </div>
-                    <span class="bg-[#f0ece1] text-[#2b4c7e] text-xs font-bold px-3 py-1 rounded-full">Accessibility</span>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm leading-relaxed">
-                    <div class="p-4 bg-[#fcfbf9] border border-stone-200 rounded-xl">
-                        <strong class="text-[#2b4c7e] text-base block mb-1">1. Equitable Use (การใช้งานที่เท่าเทียม)</strong>
-                        <p class="text-slate-700">ทุกคนใช้งานได้เหมือนกัน ไม่ตีกรอบหรือกีดกันผู้ใช้กลุ่มใดกลุ่มหนึ่ง</p>
-                    </div>
-                    <div class="p-4 bg-[#fcfbf9] border border-stone-200 rounded-xl">
-                        <strong class="text-[#2b4c7e] text-base block mb-1">2. Flexibility in Use (ความยืดหยุ่น)</strong>
-                        <p class="text-slate-700">ยืดหยุ่น รองรับความถนัด ตัวเลือก และความเร็วการใช้งานที่แตกต่างกัน</p>
-                    </div>
-                    <div class="p-4 bg-[#fcfbf9] border border-stone-200 rounded-xl">
-                        <strong class="text-[#2b4c7e] text-base block mb-1">3. Simple & Intuitive Use (เรียบง่าย เข้าใจง่าย)</strong>
-                        <p class="text-slate-700">ใช้งานง่ายโดยไม่ต้องพึ่งประสบการณ์หรือทักษะภาษาที่ซับซ้อน</p>
-                    </div>
-                    <div class="p-4 bg-[#fcfbf9] border border-stone-200 rounded-xl">
-                        <strong class="text-[#2b4c7e] text-base block mb-1">4. Perceptible Information (รับรู้ข้อมูลชัดเจน)</strong>
-                        <p class="text-slate-700">สื่อสารหลายช่องทาง คอนทราสต์สีสูง มี Alt Text รองรับ VoiceOver / Screen Reader[span_87](start_span)[span_87](end_span)</p>
-                    </div>
-                    <div class="p-4 bg-[#fcfbf9] border border-stone-200 rounded-xl">
-                        <strong class="text-[#2b4c7e] text-base block mb-1">5. Tolerance for Error (ทนทานต่อความผิดพลาด)</strong>
-                        <p class="text-slate-700">ลดความเสี่ยงจากการกดผิด มีระบบเตือนก่อนยืนยัน และ Undo/Cancel ได้[span_88](start_span)[span_88](end_span)</p>
-                    </div>
-                    <div class="p-4 bg-[#fcfbf9] border border-stone-200 rounded-xl">
-                        <strong class="text-[#2b4c7e] text-base block mb-1">6. Low Physical Effort (ใช้แรงน้อย)</strong>
-                        <p class="text-slate-700">ลดขั้นตอนกดพิมพ์ซ้ำซ้อน และลดภาระสมอง (Cognitive Overload)[span_89](start_span)[span_89](end_span)[span_90](start_span)[span_90](end_span)</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SLIDE 6: QUIZ & PRACTICE -->
-        <section id="slide-quiz" class="slide-content hidden">
-            <div class="slide-card rounded-2xl p-6 sm:p-8">
-                <div class="border-b border-stone-200 pb-4 mb-6 flex justify-between items-start">
-                    <div>
-                        <span class="text-xs font-bold text-[#2b4c7e] uppercase tracking-wider">Practice Quiz • ทดสอบตัวเองก่อนสอบ</span>
-                        <h2 class="text-2xl font-bold text-slate-900 mt-1">แนวข้อสอบ & Quiz โต้ตอบ</h2>
-                    </div>
-                    <span class="bg-amber-100 text-amber-900 text-xs font-bold px-3 py-1 rounded-full">Self Test</span>
-                </div>
-
-                <div class="space-y-4">
-                    <div class="p-5 bg-[#fcfbf9] rounded-xl border border-stone-200">
-                        <p class="font-bold text-slate-900 text-base">ข้อ 1: กฎข้อใดของ Shneiderman ที่เน้นการใส่ปุ่ม "Undo" หรือ "Cancel" เพื่อเป็น Safety Net?[span_91](start_span)[span_91](end_span)</p>
-                        <button onclick="toggleAnswer('ans1')" class="mt-2 text-sm text-[#2b4c7e] font-semibold hover:underline"><i class="fa-solid fa-key mr-1"></i>ดูเฉลยคำตอบ</button>
-                        <div id="ans1" class="hidden mt-3 p-3.5 bg-[#edf2f7] border border-slate-300 rounded-lg text-sm text-slate-800 leading-relaxed">
-                            <strong>เฉลย:</strong> Rule 6: Permit Easy Reversal of Actions (อนุญาตให้ย้อนกลับการกระทำได้ง่าย)[span_92](start_span)[span_92](end_span)[span_93](start_span)[span_93](end_span)
-                        </div>
-                    </div>
-
-                    <div class="p-5 bg-[#fcfbf9] rounded-xl border border-stone-200">
-                        <p class="font-bold text-slate-900 text-base">ข้อ 2: เป้าหมายสูงสุดเพียงหนึ่งเดียวของ Information Architecture (IA) คืออะไร?[span_94](start_span)[span_94](end_span)[span_95](start_span)[span_95](end_span)</p>
-                        <button onclick="toggleAnswer('ans2')" class="mt-2 text-sm text-[#2b4c7e] font-semibold hover:underline"><i class="fa-solid fa-key mr-1"></i>ดูเฉลยคำตอบ</button>
-                        <div id="ans2" class="hidden mt-3 p-3.5 bg-[#edf2f7] border border-slate-300 rounded-lg text-sm text-slate-800 leading-relaxed">
-                            <strong>เฉลย:</strong> คือ <strong>Findability (การหาของให้เจอ)</strong> เพื่อแก้ปัญหา Digital Overload ในปัจจุบัน[span_96](start_span)[span_96](end_span)[span_97](start_span)[span_97](end_span)
-                        </div>
-                    </div>
-
-                    <div class="p-5 bg-[#fcfbf9] rounded-xl border border-stone-200">
-                        <p class="font-bold text-slate-900 text-base">ข้อ 3: การแสดงแถบ Progress Bar ขณะอัปโหลดไฟล์ใน Nielsen's Heuristics จัดอยู่ในข้อใด?[span_98](start_span)[span_98](end_span)</p>
-                        <button onclick="toggleAnswer('ans3')" class="mt-2 text-sm text-[#2b4c7e] font-semibold hover:underline"><i class="fa-solid fa-key mr-1"></i>ดูเฉลยคำตอบ</button>
-                        <div id="ans3" class="hidden mt-3 p-3.5 bg-[#edf2f7] border border-slate-300 rounded-lg text-sm text-slate-800 leading-relaxed">
-                            <strong>เฉลย:</strong> ข้อ 1. Visibility of System Status (การแสดงสถานะของระบบ)[span_99](start_span)[span_99](end_span)[span_100](start_span)[span_100](end_span)
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Scripts -->
-    <script>
-        function switchSlide(slideId) {
-            document.querySelectorAll('.slide-content').forEach(el => el.classList.add('hidden'));
-            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('tab-btn-active'));
-
-            document.getElementById('slide-' + slideId).classList.remove('hidden');
-            document.getElementById('tab-' + slideId).classList.add('tab-btn-active');
-        }
-
-        function toggleAnswer(id) {
-            document.getElementById(id).classList.toggle('hidden');
-        }
-
-        // Initialize Slide 1
-        switchSlide('q1_3');
-    </script>
-</body>
-</html>
+                        <div class="font-bold text-slate-900 text-base mb-1 text-[#2b4c7e]">1. Strive for Consistency (สร้างความสม่ำเสมอ)</div>
+                        <p class="text-sm text-slate-700 leading-relaxed">ใช้รูปแบบ สัญลักษณ์ โทนสี และเลย์เอาต์เดิมทั้งระบบเพื่อลด Learning Curve ตัวอย่างทางเทคนิค: การสร้าง Master Blueprint ด้วย Component-Driven Architecture, Design Tokens และ Naming Conventions สม่ำเสมอ
